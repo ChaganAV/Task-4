@@ -12,4 +12,10 @@ int num1 = Convert.ToInt32(sNum1);
 int num2 = Convert.ToInt32(sNum2);
 int num3 = Convert.ToInt32(sNum3);
 
-Console.WriteLine("Hello, World!");
+int max = num1;
+if (num2 > max)
+    max = num2;
+if (num3 > max)
+    max = num3;
+
+Console.WriteLine($"Наибольшее число {max}");
